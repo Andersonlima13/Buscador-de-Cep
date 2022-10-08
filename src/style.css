@@ -1,0 +1,95 @@
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.856))
+}
+
+.title{
+    font-size:85px;
+    color:#fff;
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTytle {
+    from {
+        transform:rotateX(90deg);
+    }
+    to {
+        transform:rotateX(0deg);
+    }
+}
+
+
+.containerInput{
+    background-color: rgba(138, 131, 131, 0.993);
+    padding:15px;
+    margin:34px 0;
+    display:flex;
+    box-shadow:4px 3px 9px rgba(0, 0, 0, 0.808);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border:0;
+    font-size:20px;
+    color:rgb(0, 0, 0);
+    outline:none;
+    margin-right:6px;
+}
+
+.containerInput input::placeholder{
+    color:#fff;    
+}
+
+.button{
+    background-color:rgb(255, 255, 255);
+    border:0;
+    display:flex;
+    border-radius: 40px;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:transform 0.5s;
+}
+
+.button:hover{
+    transform:sale(1.5);
+}
+
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    width:500px;
+    border-radius:90px;
+}
+
+.main h2{
+    margin:16px 0;
+    font-size:39px;
+}
+
+.main span{
+    margin-bottom:16px;
+    font-weight: bold;
+}
+
+@media (max-width:620px){
+    .title{
+        font-size: 60px;
+    }
+
+.main h2{
+    font-size: 28px;
+}
+
+.main{
+    width:80%;
+    min-height:250px;
+  }
+}
